@@ -169,12 +169,11 @@ $(function() {
             // fetch 'CSS Tricks' RSS feed
             loadFeed(1, function() {
                 feedContentA = $('.feed').html();
-                done();
-            })
-            // fetch 'HTML5 Rocks' RSS feed
-            loadFeed(2, function() {
-                feedContentB = $('.feed').html();
-                done();
+                // fetch 'HTML5 Rocks' RSS feed
+                loadFeed(2, function() {
+                    feedContentB = $('.feed').html();
+                    done();
+                })
             })
         });
 
